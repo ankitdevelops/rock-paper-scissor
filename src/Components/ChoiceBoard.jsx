@@ -5,6 +5,7 @@ const ChoiceBoard = ({ updateUserChoice }) => {
 
   useEffect(() => {
     updateUserChoice(choice);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [choice]);
   return (
     <div className="card    absolute bottom-10 left-1/2 -translate-x-2/4">
