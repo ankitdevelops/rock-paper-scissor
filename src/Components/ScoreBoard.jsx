@@ -5,17 +5,15 @@ const ScoreBoard = ({ userChoice, computerChoice }) => {
     <div className="flex justify-between items-center mt-10">
       <div className="card border  w-80">
         <div className="card-body">
-          <h2 className="card-title">Your Score</h2>
-          <h1 className="text-7xl">10</h1>
+          <h2 className="card-title">User Choice</h2>
+          <h1 className="text-7xl">{userChoice}</h1>
         </div>
-        <h1>{userChoice}</h1>
       </div>
       <div className="card border  w-80">
         <div className="card-body">
-          <h2 className="card-title">Computer Score</h2>
-          <h1 className="text-7xl">12</h1>
+          <h2 className="card-title">Computer Choice</h2>
+          <h1 className="text-7xl">{computerChoice}</h1>
         </div>
-        <h1>{computerChoice}</h1>
       </div>
     </div>
   );
